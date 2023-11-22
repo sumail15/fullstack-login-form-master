@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 50px;
+        background-image: url(hero-bg.jpg);
+        background-size: cover;
+      }
+
+      h1,
+      h2 {
+        color: aliceblue;
+      }
+      .price {
+        color: white;
+      }
+      .navbar {
+        padding: 0;
+      }
+
+      .navbar ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+      }
+
+      .navbar li {
+        position: relative;
+      }
+
+      .navbar a,
+      .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0 10px 30px;
+        color: #fff;
+        white-space: nowrap;
+        transition: 0.3s;
+        font-size: 14px;
+      }
+
+      .navbar a i,
+      .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+      }
+
+      .navbar a:hover,
+      .navbar .active,
+      .navbar .active:focus,
+      .navbar li:hover > a {
+        color: #d9ba85;
+      }
+
+
+
+      @media (max-width: 1366px) {
+        .navbar .dropdown .dropdown ul {
+          left: -90%;
+        }
+
+        .navbar .dropdown .dropdown:hover > ul {
+          left: -100%;
+        }
+      }
+      img{
+        border:2px solid #0b0707;
+       border-radius: 10%;
+      box-shadow: 10px 10px 5px #0f0c0c;
+      -moz-box-shadow: 10px 10px 5px #090808;
+      -webkit-box-shadow: 10px 10px 5px #070606;
+      -khtml-box-shadow: 10px 10px 5px #030202;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar order-last order-lg-0">
+      <ul>
+        <li><a class="home" href="index.html" style="font-size: xx-large; font-style: italic;" >Home</a></li>
+
+    </nav>
+    <div class="container">
+      <header>
+        <br /><br />
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-size: xxx-large; text-shadow: 6px 6px 12px #000000; color: white; margin-left: 70px;"> Select Locker Size</h1>
+
+        <div class="iconCart">
+          <img src="icon.png" />
+          <div class="totalQuantity">0</div>
+        </div>
+      </header>
+
+      <div class="listProduct">
+        <div class="item">
+          <img src="img/small2.png" alt="" />
+          <h2>CoPilot / Black / Automatic</h2>
+          <div class="price">$550</div>
+          <button>+ 4hours</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>CART</h2>
+
+      <div class="listCart">
+        <div class="item">
+          <img src="img/small2.png" />
+          <div class="content">
+            <div class="name">CoPilot / Black / Automatic</div>
+            <div class="price">$550 / 1 hour</div>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span class="value">3</span>
+            <button>+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="close">BACK</div>
+        <div class="checkout">
+          <a href="checkout.html">PROCEED</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

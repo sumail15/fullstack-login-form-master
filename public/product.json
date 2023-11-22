@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Small Size (20H X 30W X 20D)",
+    "price": 25,
+    "image": "img/small2.png"
+  },
+  {
+    "id": 2,
+    "name": "Medium Size (25H X 35W X 25D)",
+    "price": 50,
+    "image": "img/med2.png"
+  },
+  {
+    "id": 3,
+    "name": "Large Size (20H X 42W X 37D)",
+    "price": 70,
+    "image": "img/large.png"
+  }
+]
